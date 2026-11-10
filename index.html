@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trilha Sustentável — 10 projetos, 10 níveis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#topo">🌱 Trilha Sustentável</a>
+  <nav><a href="#pilares">Pilares</a><a href="#projetos">Projetos</a><a href="#metodo">Método</a></nav>
+</div></header>
+
+<main id="topo">
+<div class="hero">
+  <svg class="leaf" viewBox="0 0 200 200" aria-hidden="true"><path d="M20 180C20 90 80 20 180 20c0 100-60 160-150 160z" fill="#fff"/><path d="M20 180C70 120 110 80 160 40" stroke="#14532d" stroke-width="5" fill="none"/></svg>
+  <div class="wrap">
+    <h1>Do lixo da escola ao plano de uma empresa.</h1>
+    <p>Dez projetos de pesquisa aplicada, em dificuldade crescente, para aprender a reduzir desperdícios, reaproveitar materiais e economizar recursos naturais.</p>
+    <a class="btn" href="#projetos">Explorar os 10 projetos</a>
+  </div>
+</div>
+
+<section id="pilares"><div class="wrap">
+  <h2>Quatro disciplinas, um mesmo desafio</h2>
+  <p class="lead">Cada projeto parte de uma situação real, pede coleta de dados e termina em uma proposta prática. As disciplinas se combinam de formas diferentes ao longo da trilha.</p>
+  <div class="pillars">
+    <div class="pillar"><h3>Inovação para um Mundo Sustentável</h3><p>Criar soluções novas, de protótipos físicos a plataformas digitais, que resolvam problemas ambientais concretos.</p></div>
+    <div class="pillar"><h3>Economia Circular</h3><p>Manter materiais em uso pelo maior tempo possível: reduzir, reutilizar, reparar, reciclar e compostar.</p></div>
+    <div class="pillar"><h3>Materiais Sustentáveis</h3><p>Comparar resistência, custo, origem e descarte para escolher o material de menor impacto.</p></div>
+    <div class="pillar"><h3>Soluções Ambientais</h3><p>Medir, monitorar e reduzir o consumo de água, a geração de resíduos e outros impactos.</p></div>
+  </div>
+</div></section>
+
+<section id="projetos" class="alt"><div class="wrap">
+  <h2>A trilha dos projetos</h2>
+  <p class="lead">Comece pelo Nível 1 ou filtre por tema. Clique em um projeto para ver o desafio, o objetivo e a entrega prática.</p>
+  <div class="filters" role="group" aria-label="Filtrar projetos">
+    <button class="chip" aria-pressed="true" data-f="todos">Todos</button>
+    <button class="chip" aria-pressed="false" data-f="Resíduos">Resíduos</button>
+    <button class="chip" aria-pressed="false" data-f="Água">Água</button>
+    <button class="chip" aria-pressed="false" data-f="Materiais">Materiais</button>
+    <button class="chip" aria-pressed="false" data-f="Tecnologia">Tecnologia</button>
+  </div>
+  <ol class="trail" id="trail"></ol>
+</div></section>
+
+<section id="metodo"><div class="wrap">
+  <h2>Como cada projeto funciona</h2>
+  <p class="lead">Todos seguem a mesma estrutura, que ganha profundidade a cada nível.</p>
+  <div class="method">
+    <div><h3>Situação-problema</h3><p>Um caso real com uma pergunta de pesquisa clara.</p></div>
+    <div><h3>Dados</h3><p>Levantamento com segurança e autorização; dados simulados são sempre identificados.</p></div>
+    <div><h3>Aplicação prática</h3><p>Diagnóstico, protótipo, sistema ou plano de implantação.</p></div>
+    <div><h3>Indicadores</h3><p>Métricas para acompanhar se as ações realmente funcionam.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><h2 style="color:#fff;font-size:1.5rem;margin-bottom:10px">Pequenas ações, resultados medidos.</h2><p>Site de apresentação dos 10 projetos de Inovação, Economia Circular, Materiais Sustentáveis e Soluções Ambientais.</p></div></footer>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dhead"><span class="lvl" id="dl"></span><h3 id="dt"></h3><button class="close" aria-label="Fechar" id="x">×</button></div>
+  <div class="dbody" id="db"></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
